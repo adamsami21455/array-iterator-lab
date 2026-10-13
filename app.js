@@ -97,9 +97,10 @@ console.log('Exercise 1 my result: ', veryOldInventors);
 let inventorNames = [];
 
 inventorNames = inventors.map(oneInventorName => {
-    return "first: " + oneInventorName.first + " last: " + oneInventorName.last
-
-
+        return {
+            first: oneInventorName.first,
+            last: oneInventorName.last
+            }
 });
 
 console.log('Exercise 2 my result: ', inventorNames);
